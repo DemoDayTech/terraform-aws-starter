@@ -14,9 +14,11 @@ terraform {
   // The following 'backend' block migrates your state to AWS S3.
   // Make sure you clear out your .terraform directory if you switch from HCP Terraform to S3 for storing state.
   backend "s3" {
-    bucket = "terraform-aws-starter"
-    key    = "terraform-state/terraform.tfstate"
-    region = "us-east-2"
+    bucket         = "terraform-aws-starter"
+    key            = "terraform-state/terraform.tfstate"
+    region         = "us-east-2"
+    encrypt        = true
+    dynamodb_table = "terraform-aws-starter"
   }
 
   required_providers {
