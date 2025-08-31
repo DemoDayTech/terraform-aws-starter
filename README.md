@@ -1,7 +1,7 @@
 # terraform-aws-starter
 
 
-Getting Started
+## Getting Started
 1. Install Terraform
     - Reference: https://developer.hashicorp.com/terraform/install
     - Once installed, run `terraform --verion` command to ensure its installed properly
@@ -16,7 +16,7 @@ Getting Started
     - Generate Access/Secret Keys for this user, and add to ~/.aws/config and ~/.aws/credentials
     - For this project, `region = us-east-2` is being used (Specify this in ~/.aws/config for this user profile)
 
-bootstrap 
+## bootstrap 
 - The initial resources terraform needs to manage its state are contained in the bootstrap/ project. This project contains the IaC for the S3 bucket and DynamoDB Table which manage/lock the state file (terraform.tfstate). 
 - You need to deploy these resources first so that the rest of the project works and can store its state in these resources. 
     - cd bootstrap
