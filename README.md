@@ -22,3 +22,6 @@
     - cd bootstrap
     - terraform init
     - terraform apply
+
+## Overview of project
+- This project provisions an Ubuntu EC2 instance within a VPC

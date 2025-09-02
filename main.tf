@@ -1,5 +1,6 @@
 provider "aws" {
   region = "us-east-2"
+  profile = "terraform-demo-user"
 }
 
 data "aws_ami" "ubuntu" {
@@ -10,7 +11,7 @@ data "aws_ami" "ubuntu" {
     values = ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["099720109477"]
 }
 
 resource "aws_instance" "app_server" {
