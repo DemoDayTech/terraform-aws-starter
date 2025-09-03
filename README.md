@@ -25,3 +25,6 @@
 
 ## Overview of project
 - This project provisions an Ubuntu EC2 instance within a VPC
+
+## Terraform Tip: How to Manage State in a Corporate AWS Environment
+![Alt text](state_mngt_s3.jpeg?raw=true "Terraform State Mngt") 
